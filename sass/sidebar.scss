@@ -1,0 +1,127 @@
+@import "defaults";
+@import "topbar";
+
+$bgColor: #181818;
+$fontSize: 18px;
+
+#sidebar {
+	background-color: $bgColor;
+	border: 1px solid #2B2B2B;
+
+	position: fixed;
+	width: $sidebarWidth;
+	height: 100%;
+	top: $topbarHeight;
+	left: 0px;
+	z-index: 99 !important;
+
+	overflow: hidden;
+
+	.icons {
+		position: fixed;
+		width: 1em;
+		height: 100%;
+		font-size: 1.75em;
+		padding: .0em .25em;
+	
+		border-right: 1px solid #2B2B2B;
+
+		i {
+			padding-top: .5em;
+		}
+
+		a {
+			color: #7C7C7C;
+		}
+	
+		a:hover {
+			color: #FFFFFF;
+		}
+	}
+	
+	.explorer {
+		position: fixed;
+		left: 4em;
+		padding: 1em .25em;
+
+		font-family: $defaultFont; 
+		font-size: .8em;
+
+		a {
+			color: white;
+		}
+
+		a:link { 
+			text-decoration: none; 
+		} 
+		a:visited { 
+			text-decoration: none; 
+		} 
+		a:hover { 
+			text-decoration: none; 
+			background-color: #37373D;
+		} 
+		a:active { 
+			text-decoration: none; 
+			background-color: #04395E;
+		}
+
+		@mixin arrow {
+			content: '';
+			 position: absolute;
+			 border-right: 2px solid white;
+			 border-bottom: 2px solid white;
+			 width: 5px;
+			 height: 5px;
+			 top: 5px;
+			 left: -20px;
+			 
+			 transform: rotate(-45deg);
+		}
+
+		ul li {
+			position: relative;
+			padding-bottom: 5px;
+			left: 5px;
+		}
+		
+		ul {
+			list-style: none;
+			border-left: 2px solid #404040;
+			padding: 0px;
+			padding-left: 5px;
+
+			margin-left: 12px;
+			margin-top: 0px;
+			margin-bottom: 0px;
+		}
+
+		summary {
+			list-style-type: none; /* Firefox */
+			position: relative;
+			left: 30px;
+			
+			cursor: pointer;
+			display: block;
+			user-select: none;
+		}
+
+		summary::-webkit-details-marker {
+			display: none; /* Chrome */
+		}
+
+		summary:before{
+			@include arrow;
+		}
+
+		details[open] summary:before {
+			transform: rotate(45deg);
+		}
+	}
+}
+
+@media only screen and (max-width: 60em) {
+	#sidebar {
+		display: none;
+	}
+}

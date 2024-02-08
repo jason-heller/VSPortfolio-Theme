@@ -26,8 +26,6 @@
 
 <body>
 
-	<script src="./app.js"></script>
-
 	<div id="topbar">
 		<picture>
 			<source media="(max-width: 655px)" srcset="media/topbar-logo-fallback-2.png">
@@ -35,18 +33,54 @@
 			<img src="media/topbar-logo.png" alt="media/topbar-logo-fallback-2.png">
 		</picture>
 		
-
 		<nav>
-			<a href="#projects">Projects</a>
 			<a href="#skills">Skills</a>
+			<a href="#projects">Projects</a>
 			<a href="#contact">Contact</a>
 		</nav>
+	</div>
+
+	<div id="sidebar">
+
+		<div class="icons">
+			<a href="https://github.com/jason-heller" aria-label="github" class="link link--icon">
+				<i aria-hidden="true" class="fab fa-github"></i>
+			</a>
+
+			<a href="https://linkedin.com/in/jasonheller96" aria-label="linkedin" class="link link--icon">
+				<i aria-hidden="true" class="fab fa-linkedin"></i>
+			</a>
+		</div>
+
+		<div class="explorer">
+
+			<details open>
+				<summary><a href="#skills">Skills</a></summary>
+
+				<ul>
+					<li><i class="fas fa-terminal"></i> HTML5</li>
+					<li><i class="fas fa-terminal"></i> CSS3 + SASS</li>
+				</ul>
+			</details>
+
+			<details open>
+				<summary><a href="#projects">Projects</a></summary>
+				<ul>
+					<li><a href="#recipe-lookup"><i class="fas fa-terminal"></i>Predictive Recipe Lookup</a></li>
+					<li><a href="#netscidraw"><i class="fas fa-terminal"></i>NetSciDraw</a></li>
+					<li><a href="#java-game-engine"><i class="fas fa-terminal"></i>3D Java Game Engine</a></li>
+					<li><a href="#procedural-open-world"><i class="fas fa-terminal"></i>Procedural Open World</a></li>
+				</ul>
+			</details>
+
+		</div>
+	
 	</div>
 
 	<div id="sections">
 
 		<div class="header">
-			Hi! I'm <span id="name">Jason Heller</span>.
+			Hi! I'm <span id="name">Jason Heller</span>
 		</div>
 
 		<div class="section" id="about">
@@ -65,7 +99,7 @@
 
 			</div>
 			
-			<img class="section-image" src="media/logo.png"/>
+			<img class="section-image" src="media/me.jpg"/>
 
 		</div>
 
@@ -79,6 +113,22 @@
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
 					exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
 					pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+
+					<ul>
+						<li><i class="fab fa-html5"></i> HTML5</li>
+						<li><i class="fab fa-css3"></i> CSS3 + SASS</li>
+						<li><i class="fab fa-react"></i> React</li>
+						<li><i class="fab fa-vuejs"></i> Vue</li>
+						<li><i class="fab fa-java"></i> Java</li>
+						<li><i class="fab fa-js"></i> Javascript</li>
+						<li><i class="fab fa-python"></i> Python</li>
+						<li><i class="fas fa-terminal"></i> GLSL</li>
+						<li><i class="fas fa-terminal"></i> VS Code</li>
+						<li><i class="fab fa-git-alt"></i> Git</li>
+						<li><i class="fas fa-tools"></i> Gradle & Maven</li>
+						<li><i class="fab fa-java"></i> Spring Boot</li>
+						<li><i class="fab fa-codepen"></i> OpenGL</li>
+					</ul>
 				</div>
 
 				<div class="footer"></div>
@@ -96,9 +146,124 @@
 				<div class="header">Projects</div>
 
 				<div class="body">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-					exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
-					pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+						exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+						pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+					</p>
+
+					<!-- Projects go here -->
+
+					<div class="header project-block" id="recipe-lookup">Predictive Recipe Lookup</div>
+					<div class="body">
+
+						<img class="project-image" src="media/projects/project1_gif.gif" />
+
+						<p class="project-description">
+							A CRUD-based single-page search engine that utilizes lookahead to search through a mock back-end and return the most relevant results in realtime.
+						</p>
+
+						<ul class="project-stack">
+							<li class="project-stack-item">Javascript</li>
+							<li class="project-stack-item">React</li>
+							<li class="project-stack-item">Json-Server</li>
+						</ul>
+
+						<a href="https://github.com/jason-heller/recipe-predictive-lookup" aria-label="source code" class="link link--icon">
+							<i aria-hidden="true" class="fab fa-github"></i>
+						</a>
+						<a href="https://youtu.be/IcualmCfFbs" aria-label="live preview" class="link link--icon">
+							<i aria-hidden="true" class="fas fa-external-link-alt"></i>
+						</a>
+
+					</div>
+					<div class="footer project-block-end"></div>
+
+
+
+					<div class="header project-block" id="netscidraw">NetSciDraw</div>
+					<div class="body">
+
+						<img class="project-image" src="media/projects/project2A.png" />
+
+						<p class="project-description">
+							NetSciDraw is a web application made in collaboration with the New York hall of Science designed to demonstrate information systems through an intuitive interface. I worked as the developer in a team of five to extend and refactor the existing codebase.
+						</p>
+
+						<ul class="project-stack">
+							<li class="project-stack-item">Javascript</li>
+						</ul>
+
+						<a href="https://github.com/jason-heller/NetSciDraw" aria-label="source code" class="link link--icon">
+							<i aria-hidden="true" class="fab fa-github"></i>
+						</a>
+						<a href="http://coco.binghamton.edu/netscidraw/" aria-label="live preview" class="link link--icon">
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+
+					</div>
+					<div class="footer project-block-end"></div>
+
+
+
+					<div class="header project-block" id="java-game-engine">3D Java Game Engine</div>
+					<div class="body">
+
+						<img class="project-image" src="media/projects/project3_gifB.gif" id="slideshow0"/>
+
+						<p class="project-description">
+							A 3D game engine written in Java using OpenGL. Features a scene-entity architecture. Features fully 3D environments
+                utilizing BSP trees for optimization, baked ambient lightmapping, skeletal animations, parallax-corrected cube maps,
+                and a built-in component based user interface. Currently, I am using this engine to power a momentum-based skateboarding
+                game.
+						</p>
+
+						<ul class="project-stack">
+							<li class="project-stack-item">Java</li>
+							<li class="project-stack-item">OpenGL</li>
+							<li class="project-stack-item">GLSL</li>
+						</ul>
+
+						<a href="https://github.com/jason-heller/3d-java-game-engine" aria-label="source code" class="link link--icon">
+							<i aria-hidden="true" class="fab fa-github"></i>
+						</a>
+						<a href="https://youtu.be/RS1yGBSSrEE" aria-label="view on Youtube" class="link link--icon">
+              <i aria-hidden="true" class="fab fa-youtube"></i>
+            </a>
+
+					</div>
+					<div class="footer project-block-end"></div>
+
+
+
+					<div class="header project-block" id="procedural-open-world">Procedural Open World</div>
+					<div class="body">
+
+						<img class="project-image" src="media/projects/project4A.png" id="slideshow1" />
+
+						<p class="project-description">
+							A game engine with a fully procedural world built on the fly using perlin noise and voronoi diagrams. Additionally features pseudo-infinite terrain, world persistance, 
+							and resource based building mechanics.
+						</p>
+
+						<ul class="project-stack">
+							<li class="project-stack-item">Java</li>
+							<li class="project-stack-item">OpenGL</li>
+							<li class="project-stack-item">GLSL</li>
+						</ul>
+
+						<a href="https://github.com/jason-heller/ProjectMoonglade" aria-label="source code" class="link link--icon">
+							<i aria-hidden="true" class="fab fa-github"></i>
+						</a>
+						<a href="https://www.youtube.com/watch?v=At-BLAWecRA&t=384s" aria-label="view on Youtube" class="link link--icon">
+              <i aria-hidden="true" class="fab fa-youtube"></i>
+            </a>
+
+					</div>
+					<div class="footer project-block-end"></div>
+
+					<!-- Projects end here -->
+
 				</div>
 
 				<div class="footer"></div>
@@ -126,8 +291,12 @@
 			<img class="section-image" src="media/logo.png"/>
 
 		</div>
+		
+		<div class="footer"></div>
 
 	</div>
+
+	<script src="app.js"></script>
 
 </body>
 </html>

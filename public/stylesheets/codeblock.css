@@ -1,0 +1,32 @@
+.header {
+  background-color: #1F1F1F;
+  padding-right: 4px;
+  font-weight: bold;
+  font-size: 36px;
+  color: #D7AB4C;
+}
+
+.header:after {
+  content: " {";
+  color: #CE70B3;
+}
+
+.body {
+  border-left: 2px solid #404040;
+  background-color: #1F1F1F;
+  padding-right: 4px;
+  padding-left: 30px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: left;
+}
+
+.footer:before {
+  content: "}";
+  white-space: pre;
+  font-weight: bold;
+  font-size: 36px;
+  color: #CE70B3;
+}
+
+/*# sourceMappingURL=codeblock.css.map */

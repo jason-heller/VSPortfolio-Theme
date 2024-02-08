@@ -1,16 +1,16 @@
 @import "defaults";
 
 $bgColor: #181818;
-$height: 42px;
+$topbarHeight: 42px;
 $fontSize: 18px;
-$topPadding: calc(($height - $fontSize) / 2) - 2;
+$topPadding: calc(($topbarHeight - $fontSize) / 2) - 2;
 
 #topbar {
 	background-color: $bgColor;
 
 	position: fixed;
 	width: 100%;
-	height: $height;
+	height: $topbarHeight;
 	top: 0px;
 	left: 0px;
 	z-index: 99 !important;
@@ -20,7 +20,7 @@ $topPadding: calc(($height - $fontSize) / 2) - 2;
 	img {
 		float: left;
 		padding: 6px 6px;
-    margin-right:-100%;
+    	margin-right:-100%;
 	}
 
 	nav {
@@ -33,6 +33,14 @@ $topPadding: calc(($height - $fontSize) / 2) - 2;
 
 			text-decoration: none;
 			font-size: $fontSize;
-		}
+
+			-o-transition: background-color $urlHoverTransSpeedIn ease-in;
+			-ms-transition: background-color $urlHoverTransSpeedIn ease-in;
+			-moz-transition: background-color $urlHoverTransSpeedIn ease-in;
+			-webkit-transition: background-color $urlHoverTransSpeedIn ease-in;
+	
+			transition:color $urlHoverTransSpeedOut ease-out, background-color $urlHoverTransSpeedIn ease-in;
+			}
+			a:hover { background-color:$hoverColor; }
 	}
 }

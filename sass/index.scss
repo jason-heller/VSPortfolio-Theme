@@ -1,6 +1,12 @@
 @import "defaults";
 @import "topbar";
+@import "sidebar";
 @import "sections";
+@import "project";
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
 	@include defaults;

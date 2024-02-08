@@ -1,12 +1,14 @@
-$defaultFont: Helvetica, sans-serif;
+$defaultFont: monaco,Consolas,Lucida Console,monospace;
 $defaultFontSize: 18px;
-$defaultFontColor: #FFFFFF;
+$defaultFontColor: #CCCCCC;
 
-$defaultBgColor: #2e2e2e;
+$defaultBgColor: #1F1F1F;
 
 $urlHoverTransSpeedIn: .1s;
 $urlHoverTransSpeedOut: .1s;
 $hoverColor: #212B35;
+
+$sidebarWidth: 17em;
 
 @mixin defaults {
 	font-family: $defaultFont;
@@ -14,14 +16,4 @@ $hoverColor: #212B35;
 	color: $defaultFontColor;
 
 	background-color: $defaultBgColor;
-
-	a {
-		-o-transition: background-color $urlHoverTransSpeedIn ease-in;
-		-ms-transition: background-color $urlHoverTransSpeedIn ease-in;
-		-moz-transition: background-color $urlHoverTransSpeedIn ease-in;
-		-webkit-transition: background-color $urlHoverTransSpeedIn ease-in;
-
-		transition:color $urlHoverTransSpeedOut ease-out, background-color $urlHoverTransSpeedIn ease-in;
-	  }
-	  a:hover { background-color:$hoverColor; }
 }

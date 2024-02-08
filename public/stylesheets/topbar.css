@@ -22,6 +22,14 @@
   padding: 10px 16px;
   text-decoration: none;
   font-size: 18px;
+  -o-transition: background-color 0.1s ease-in;
+  -ms-transition: background-color 0.1s ease-in;
+  -moz-transition: background-color 0.1s ease-in;
+  -webkit-transition: background-color 0.1s ease-in;
+  transition: color 0.1s ease-out, background-color 0.1s ease-in;
+}
+#topbar nav a:hover {
+  background-color: #212B35;
 }
 
 /*# sourceMappingURL=topbar.css.map */

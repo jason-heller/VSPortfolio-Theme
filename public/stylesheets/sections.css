@@ -1,42 +1,44 @@
-#sections {
-  margin: 0 auto;
-  padding-top: 255px;
-  width: 45em;
-}
-#sections .section {
-  padding-top: 100px;
-  padding-left: 10px;
-  margin: 0 auto;
-  width: 45em;
-  border-left: 2px solid #404040;
-}
-#sections .header {
-  background-color: #2e2e2e;
+.header {
+  background-color: #1F1F1F;
   padding-right: 4px;
-  font-family: Helvetica, sans-serif;
-  font-size: 36px;
   font-weight: bold;
+  font-size: 36px;
   color: #D7AB4C;
 }
-#sections .header:after {
+
+.header:after {
   content: " {";
   color: #CE70B3;
 }
-#sections .body {
+
+.body {
   border-left: 2px solid #404040;
-  background-color: #2e2e2e;
+  background-color: #1F1F1F;
   padding-right: 4px;
-  padding-top: 25px;
   padding-left: 30px;
+  padding-top: 25px;
   padding-bottom: 25px;
   text-align: left;
 }
-#sections .footer:before {
+
+.footer:before {
   content: "}";
   white-space: pre;
-  font-size: 36px;
   font-weight: bold;
+  font-size: 36px;
   color: #CE70B3;
+}
+
+#sections {
+  padding-left: 21em;
+  padding-top: 200px;
+}
+#sections .section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 30px;
+  width: 55em;
+  border-left: 2px solid #404040;
 }
 #sections .section-text-no-image {
   padding-right: 1%;
@@ -48,20 +50,33 @@
   padding-right: 1%;
   padding-left: 1%;
   display: inline-block;
-  width: 75%;
+  width: 60%;
+}
+#sections .section-image {
+  max-width: 256px;
+  max-height: 256px;
+  border-radius: 50%;
+  margin-bottom: 3em;
 }
 #sections #name {
   font-style: italic;
   color: #55c1f3;
 }
-@media only screen and (max-width: 50em) {
+
+@media only screen and (max-width: 60em) {
+  #sections {
+    padding-left: 0em;
+  }
   #sections .section {
-    width: 35em;
+    width: 45em;
   }
 }
 @media only screen and (max-width: 40em) {
+  #sections {
+    padding-left: 0em;
+  }
   #sections .section {
-    width: 25em;
+    width: 35em;
   }
 }
 

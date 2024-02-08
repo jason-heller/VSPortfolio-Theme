@@ -1,0 +1,48 @@
+@import "defaults";
+
+$bgColorHead: $defaultBgColor;
+$bgColorBody: $defaultBgColor;
+
+$titleFontSize: 36px;
+$titleFontColor: #D7AB4C;
+$titleBracketColor: #CE70B3;
+
+$tabWidth: 30px;
+
+@mixin indent {
+	border-left: 2px solid #404040;
+}
+
+.header {
+	background-color: $bgColorHead;
+	padding-right: 4px;
+	font-weight: bold;
+	font-size: $titleFontSize;
+	color: $titleFontColor;
+}
+
+.header:after {
+	content: ' {';
+		color: $titleBracketColor;
+}
+
+.body {
+	@import "defaults";
+	@include indent;
+
+	background-color: $bgColorBody;
+	padding-right: 4px;
+	padding-left: $tabWidth;
+	padding-top: 25px;
+	padding-bottom: 25px;
+
+	text-align: left;
+}
+
+.footer:before {
+	content: '}';
+	white-space: pre;
+	font-weight: bold;
+	font-size: $titleFontSize;
+	color: $titleBracketColor;
+}
