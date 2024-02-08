@@ -1,0 +1,104 @@
+@import "defaults";
+
+$bgColorHead: $defaultBgColor;
+$bgColorBody: $defaultBgColor;
+
+$titleFont: Helvetica, sans-serif;
+$titleFontSize: 36px;
+$titleFontColor: #D7AB4C;
+$bracketColor: #CE70B3;
+
+$nameFontColor: #55c1f3;
+
+$sectionWidth: 45em;
+$contentWidth: 75%;
+$contentPaddingHoriz: 1%;
+
+@mixin indent {
+	border-left: 2px solid #404040;
+}
+
+#sections {
+	
+	margin: 0 auto;
+	padding-top: 255px;
+	width: $sectionWidth;
+
+	.section {
+		padding-top: 100px;
+		padding-left: 10px;
+		margin: 0 auto;
+		width: $sectionWidth;
+		@include indent;
+	}
+
+	.header {
+		background-color: $bgColorHead;
+		padding-right: 4px;
+	
+		font-family: $titleFont;
+		font-size: $titleFontSize;
+		font-weight: bold;
+		color: $titleFontColor;
+	}
+
+	.header:after {
+		content: ' {';
+		color: $bracketColor;
+	}
+	
+	.body {
+		@import "defaults";
+		@include indent;
+
+		background-color: $bgColorBody;
+		padding-right: 4px;
+		padding-top: 25px;
+		padding-left: 30px;
+		padding-bottom: 25px;
+		
+		text-align: left;
+	}
+
+	.footer:before {
+		content: '}';
+		white-space: pre;
+
+		font-size: $titleFontSize;
+		font-weight: bold;
+		color: $bracketColor;
+	}
+
+	@mixin section-content-defaults {
+		padding-right: $contentPaddingHoriz;
+		padding-left: $contentPaddingHoriz;
+		display: inline-block;
+	}
+
+	.section-text-no-image {
+		@include section-content-defaults;
+		width: 98%;
+	}
+
+	.section-text {
+		@include section-content-defaults;
+		width: $contentWidth;
+	}
+
+	#name {
+		font-style: italic;
+		color: $nameFontColor;
+	}
+
+	@media only screen and (max-width: 50em) {
+		.section {
+			width: $sectionWidth - 10em;
+		}
+	}
+
+	@media only screen and (max-width: 40em) {
+		.section {
+			width: $sectionWidth - 20em;
+		}
+	}
+}

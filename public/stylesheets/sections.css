@@ -1,0 +1,68 @@
+#sections {
+  margin: 0 auto;
+  padding-top: 255px;
+  width: 45em;
+}
+#sections .section {
+  padding-top: 100px;
+  padding-left: 10px;
+  margin: 0 auto;
+  width: 45em;
+  border-left: 2px solid #404040;
+}
+#sections .header {
+  background-color: #2e2e2e;
+  padding-right: 4px;
+  font-family: Helvetica, sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  color: #D7AB4C;
+}
+#sections .header:after {
+  content: " {";
+  color: #CE70B3;
+}
+#sections .body {
+  border-left: 2px solid #404040;
+  background-color: #2e2e2e;
+  padding-right: 4px;
+  padding-top: 25px;
+  padding-left: 30px;
+  padding-bottom: 25px;
+  text-align: left;
+}
+#sections .footer:before {
+  content: "}";
+  white-space: pre;
+  font-size: 36px;
+  font-weight: bold;
+  color: #CE70B3;
+}
+#sections .section-text-no-image {
+  padding-right: 1%;
+  padding-left: 1%;
+  display: inline-block;
+  width: 98%;
+}
+#sections .section-text {
+  padding-right: 1%;
+  padding-left: 1%;
+  display: inline-block;
+  width: 75%;
+}
+#sections #name {
+  font-style: italic;
+  color: #55c1f3;
+}
+@media only screen and (max-width: 50em) {
+  #sections .section {
+    width: 35em;
+  }
+}
+@media only screen and (max-width: 40em) {
+  #sections .section {
+    width: 25em;
+  }
+}
+
+/*# sourceMappingURL=sections.css.map */

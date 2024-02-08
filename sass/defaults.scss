@@ -1,0 +1,27 @@
+$defaultFont: Helvetica, sans-serif;
+$defaultFontSize: 18px;
+$defaultFontColor: #FFFFFF;
+
+$defaultBgColor: #2e2e2e;
+
+$urlHoverTransSpeedIn: .1s;
+$urlHoverTransSpeedOut: .1s;
+$hoverColor: #212B35;
+
+@mixin defaults {
+	font-family: $defaultFont;
+	font-size: $defaultFontSize;
+	color: $defaultFontColor;
+
+	background-color: $defaultBgColor;
+
+	a {
+		-o-transition: background-color $urlHoverTransSpeedIn ease-in;
+		-ms-transition: background-color $urlHoverTransSpeedIn ease-in;
+		-moz-transition: background-color $urlHoverTransSpeedIn ease-in;
+		-webkit-transition: background-color $urlHoverTransSpeedIn ease-in;
+
+		transition:color $urlHoverTransSpeedOut ease-out, background-color $urlHoverTransSpeedIn ease-in;
+	  }
+	  a:hover { background-color:$hoverColor; }
+}
