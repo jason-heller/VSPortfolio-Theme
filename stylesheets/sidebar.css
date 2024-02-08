@@ -19,9 +19,9 @@
 #topbar nav a {
   float: left;
   color: #f2f2f2;
-  padding: 10px 16px;
+  padding: 11px 9px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 16px;
   -o-transition: background-color 0.1s ease-in;
   -ms-transition: background-color 0.1s ease-in;
   -moz-transition: background-color 0.1s ease-in;

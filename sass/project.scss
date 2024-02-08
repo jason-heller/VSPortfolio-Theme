@@ -7,9 +7,42 @@
 	border-radius: 5%;
 }
 
+
 .project-description {
 	width: 50%;
 	min-width: 20em;
+}
+
+.project-stack {
+	display: inline-block;
+	list-style: none;
+	padding-left: 0;
+
+	ul {
+		display: block; 
+		overflow: hidden;
+	}
+	
+	li {
+		padding-right: 1em;
+		float: left;
+	}
+}
+
+.project-links {
+	display: inline-block;
+	list-style: none;
+	padding-left: 0;
+
+	ul {
+		display: block; 
+		overflow: hidden;
+	}
+	
+	li {
+		padding-right: 1em;
+		float: left;
+	}
 }
 
 .project-block {

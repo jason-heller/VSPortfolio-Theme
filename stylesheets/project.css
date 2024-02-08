@@ -10,6 +10,34 @@
   min-width: 20em;
 }
 
+.project-stack {
+  display: inline-block;
+  list-style: none;
+  padding-left: 0;
+}
+.project-stack ul {
+  display: block;
+  overflow: hidden;
+}
+.project-stack li {
+  padding-right: 1em;
+  float: left;
+}
+
+.project-links {
+  display: inline-block;
+  list-style: none;
+  padding-left: 0;
+}
+.project-links ul {
+  display: block;
+  overflow: hidden;
+}
+.project-links li {
+  padding-right: 1em;
+  float: left;
+}
+
 .project-block {
   font-size: 24px;
   padding-top: 50px;

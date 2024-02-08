@@ -33,6 +33,9 @@
   #sections {
     padding-left: 0em;
   }
+  .body {
+    width: 75%;
+  }
 }
 #sections {
   margin: auto;
@@ -50,28 +53,22 @@
   border-left: 2px solid #404040;
   margin: 0 auto;
 }
-#sections .section-text-no-image {
+#sections .section-text {
   padding-right: 1%;
   padding-left: 1%;
   display: inline-block;
   padding-left: 1em;
   width: 98%;
 }
-#sections .section-text {
-  padding-right: 1%;
-  padding-left: 1%;
-  display: inline-block;
-  width: 55%;
-  padding-left: 1em;
-}
 #sections .section-image {
-  max-width: 256px;
-  max-height: 256px;
+  width: 256px;
+  height: 256px;
+  margin-right: 8em;
   border-radius: 50%;
-  margin-bottom: 3em;
+  float: right;
 }
 #sections .skills {
-  display: inline-block;
+  width: 20em;
 }
 #sections .skills ul {
   list-style: none;
@@ -79,34 +76,9 @@
   overflow: hidden;
 }
 #sections .skills li {
-  width: 33%;
+  width: 44%;
   float: left;
-}
-#sections .project-stack {
-  display: inline-block;
-  list-style: none;
-  padding-left: 0;
-}
-#sections .project-stack ul {
-  display: block;
-  overflow: hidden;
-}
-#sections .project-stack li {
-  padding-right: 1em;
-  float: left;
-}
-#sections .project-links {
-  display: inline-block;
-  list-style: none;
-  padding-left: 0;
-}
-#sections .project-links ul {
-  display: block;
-  overflow: hidden;
-}
-#sections .project-links li {
-  padding-right: 1em;
-  float: left;
+  margin-top: 1em;
 }
 #sections #name {
   font-style: italic;
@@ -120,6 +92,9 @@
   #sections .entrypoint {
     width: 40em;
   }
+  #sections .section-image {
+    float: bottom;
+  }
 }
 @media only screen and (max-width: 48em) {
   #sections {
@@ -129,9 +104,15 @@
     width: 30em;
     margin: 0;
   }
+  #sections .section-text {
+    width: 28em;
+  }
   #sections .entrypoint {
     width: 30em;
     margin: 0;
+  }
+  #sections .section-image {
+    display: none;
   }
 }
 

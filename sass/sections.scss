@@ -4,7 +4,7 @@
 $nameFontColor: #55c1f3;
 
 $sectionWidth: 50em;
-$contentWidth: 55%;
+$contentWidth: 30em;
 $contentPaddingHoriz: 1%;
 
 #sections {
@@ -33,29 +33,24 @@ $contentPaddingHoriz: 1%;
 
 		margin: 0 auto;
 	}
-	
-	.section-text-no-image {
+
+	.section-text {
 		@include section-content-defaults;
 		
 		padding-left: $tabWidth;
 		width: 98%;
 	}
 
-	.section-text {
-		@include section-content-defaults;
-		width: $contentWidth;
-		padding-left: $tabWidth;
-	}
-
 	.section-image {
-		max-width: 256px;
-		max-height: 256px;
+		width: 256px;
+		height: 256px;
+		margin-right: 8em;
 		border-radius: 50%;
-		margin-bottom: 3em;
-	}
+		float:right;
+	}	
 
 	.skills {
-		display: inline-block;
+		width: 20em;
 
 		ul {
 			list-style: none;
@@ -64,40 +59,9 @@ $contentPaddingHoriz: 1%;
 		}
 		
 		li {
-			width: 33%;
+			width: 44%;
 			float: left;
-		}
-	}
-
-	.project-stack {
-		display: inline-block;
-		list-style: none;
-		padding-left: 0;
-
-		ul {
-			display: block; 
-			overflow: hidden;
-		}
-		
-		li {
-			padding-right: 1em;
-			float: left;
-		}
-	}
-
-	.project-links {
-		display: inline-block;
-		list-style: none;
-		padding-left: 0;
-
-		ul {
-			display: block; 
-			overflow: hidden;
-		}
-		
-		li {
-			padding-right: 1em;
-			float: left;
+			margin-top: 1em;
 		}
 	}
 
@@ -115,6 +79,10 @@ $contentPaddingHoriz: 1%;
 		.entrypoint {
 			width: $sectionWidth - 10em;
 		}
+
+		.section-image {
+			float: bottom;
+		}
 	}
 }
 
@@ -127,9 +95,17 @@ $contentPaddingHoriz: 1%;
 			margin: 0;
 		}
 
+		.section-text {
+			width: $contentWidth - 2em;
+		}
+
 		.entrypoint {
 			width: $sectionWidth - 20em;
 			margin: 0;
+		}
+
+		.section-image {
+			display:none;
 		}
 	}
 }
