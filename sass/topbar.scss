@@ -2,7 +2,7 @@
 
 $bgColor: #181818;
 $topbarHeight: 42px;
-$fontSize: 18px;
+$fontSize: 14px;
 $topPadding: calc(($topbarHeight - $fontSize) / 2) - 2;
 
 #topbar {
@@ -29,7 +29,7 @@ $topPadding: calc(($topbarHeight - $fontSize) / 2) - 2;
 		a {
 			float: left;
 			color: #f2f2f2;
-			padding: $topPadding 16px;
+			padding: $topPadding 4px;
 
 			text-decoration: none;
 			font-size: $fontSize;
@@ -42,7 +42,7 @@ $topPadding: calc(($topbarHeight - $fontSize) / 2) - 2;
 			transition:color $urlHoverTransSpeedOut ease-out, background-color $urlHoverTransSpeedIn ease-in;
 		}
 		a:hover { 
-			background-color:$hoverColor; 
+			background-color: $hoverColor; 
 		}
 	}
 }
