@@ -29,7 +29,7 @@ $topPadding: calc(($topbarHeight - $fontSize) / 2) - 2;
 		a {
 			float: left;
 			color: #f2f2f2;
-			padding: $topPadding 4px;
+			padding: $topPadding 0px;
 
 			text-decoration: none;
 			font-size: $fontSize;
