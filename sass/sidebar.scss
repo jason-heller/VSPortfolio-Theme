@@ -4,6 +4,17 @@
 $bgColor: #181818;
 $fontSize: 18px;
 
+@mixin arrow {
+	content: '';
+	position: absolute;
+	border-right: 1px solid $defaultFontColor;
+	border-bottom: 1px solid $defaultFontColor;
+	width: 5px;
+	height: 5px;
+	top: 5px;
+	left: -20px;
+}
+
 #sidebar {
 	background-color: $bgColor;
 	border: 1px solid #2B2B2B;
@@ -13,9 +24,17 @@ $fontSize: 18px;
 	height: 100%;
 	top: $topbarHeight;
 	left: 0px;
-	right: 0px;
 
 	overflow: hidden;
+
+	a {
+		color: #7C7C7C;
+	}
+
+	a:hover {
+		color: #FFFFFF;
+		background: none;
+	}
 
 	.icons {
 		position: fixed;
@@ -41,6 +60,7 @@ $fontSize: 18px;
 
 		a {
 			color: $defaultFontColor;
+			transition: none;
 		}
 
 		i {
@@ -60,19 +80,6 @@ $fontSize: 18px;
 			background-color: #04395E;
 			border: 1px solid #0078D4;
 			color: #FFFFFF;
-		}
-
-		@mixin arrow {
-			content: '';
-			 position: absolute;
-			 border-right: 1px solid $defaultFontColor;
-			 border-bottom: 1px solid $defaultFontColor;
-			 width: 5px;
-			 height: 5px;
-			 top: 5px;
-			 left: -20px;
-			 
-			 transform: rotate(-45deg);
 		}
 
 		ul li {
@@ -95,7 +102,7 @@ $fontSize: 18px;
 		summary {
 			list-style-type: none; /* Firefox */
 			position: relative;
-			left: 30px;
+			left: 25px;
 			
 			cursor: pointer;
 			display: block;
@@ -108,12 +115,28 @@ $fontSize: 18px;
 
 		summary:before{
 			@include arrow;
+			transform: rotate(-45deg);
 		}
 
 		details[open] summary:before {
 			transform: rotate(45deg);
 		}
 	}
+}
+
+.portfolio {
+	list-style-type: none;
+	position: relative;
+	left: 30px;
+	
+	cursor: pointer;
+	display: block;
+	user-select: none;
+}
+
+.portfolio:before {
+	@include arrow;
+	transform: rotate(45deg);
 }
 
 @media only screen and (max-width: $minWidForSidebar) {

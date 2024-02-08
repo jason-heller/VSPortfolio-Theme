@@ -28,21 +28,23 @@ $contentPaddingHoriz: 1%;
 	.section {
 		padding-top: 50px;
 		padding-bottom: 50px;
-		padding-left: $tabWidth;
 		width: $sectionWidth;
 		@include indent;
-	
-		margin: auto;
+
+		margin: 0 auto;
 	}
 	
 	.section-text-no-image {
 		@include section-content-defaults;
+		
+		padding-left: $tabWidth;
 		width: 98%;
 	}
 
 	.section-text {
 		@include section-content-defaults;
 		width: $contentWidth;
+		padding-left: $tabWidth;
 	}
 
 	.section-image {
@@ -52,31 +54,63 @@ $contentPaddingHoriz: 1%;
 		margin-bottom: 3em;
 	}
 
+	.skills {
+		display: inline-block;
+
+		ul {
+			list-style: none;
+			display: block; 
+			overflow: hidden;
+		}
+		
+		li {
+			width: 33%;
+			float: left;
+		}
+	}
+
+	.project-stack {
+		display: inline-block;
+		list-style: none;
+		padding-left: 0;
+
+		ul {
+			display: block; 
+			overflow: hidden;
+		}
+		
+		li {
+			padding-right: 1em;
+			float: left;
+		}
+	}
+
+	.project-links {
+		display: inline-block;
+		list-style: none;
+		padding-left: 0;
+
+		ul {
+			display: block; 
+			overflow: hidden;
+		}
+		
+		li {
+			padding-right: 1em;
+			float: left;
+		}
+	}
+
 	#name {
 		font-style: italic;
 		color: $nameFontColor;
 	}
 }
 
-#bottombar {
-	height: 10em;
-	
-	z-index: 99 !important;
-	background-color: #181818;
-	color: $defaultFontColor;
-	margin-top: 6em;
-	bottom: 0px;
-	width: 100%;
-	text-align: center;
-}
-
 @media only screen and (max-width: $minWidForSidebar) {
 	#sections {
 		padding-left: 0em;
 
-		.section {
-			width: $sectionWidth - 10em;
-		}
 
 		.entrypoint {
 			width: $sectionWidth - 10em;
@@ -86,18 +120,15 @@ $contentPaddingHoriz: 1%;
 
 @media only screen and (max-width: $minWidForImages) {
 	#sections {
-		padding-left: 0em;
 		margin: 0;
 
 		.section {
 			width: $sectionWidth - 20em;
-			padding-left: calc($tabWidth / 2);
 			margin: 0;
 		}
 
 		.entrypoint {
 			width: $sectionWidth - 20em;
-			padding-left: calc($tabWidth / 2);
 			margin: 0;
 		}
 	}

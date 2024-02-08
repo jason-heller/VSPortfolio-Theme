@@ -7,7 +7,7 @@
 }
 
 .header:after {
-  content: " {";
+  content: " { ";
   color: #CE70B3;
 }
 
@@ -16,8 +16,8 @@
   background-color: #1F1F1F;
   padding-right: 4px;
   padding-left: 1em;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 1em;
+  padding-bottom: 1em;
   text-align: left;
 }
 
@@ -33,9 +33,6 @@
   #sections {
     padding-left: 0em;
   }
-  #sections .body {
-    padding-left: 0.5em;
-  }
 }
 #sections {
   margin: auto;
@@ -49,15 +46,15 @@
 #sections .section {
   padding-top: 50px;
   padding-bottom: 50px;
-  padding-left: 1em;
   width: 50em;
   border-left: 2px solid #404040;
-  margin: auto;
+  margin: 0 auto;
 }
 #sections .section-text-no-image {
   padding-right: 1%;
   padding-left: 1%;
   display: inline-block;
+  padding-left: 1em;
   width: 98%;
 }
 #sections .section-text {
@@ -65,6 +62,7 @@
   padding-left: 1%;
   display: inline-block;
   width: 55%;
+  padding-left: 1em;
 }
 #sections .section-image {
   max-width: 256px;
@@ -72,28 +70,52 @@
   border-radius: 50%;
   margin-bottom: 3em;
 }
+#sections .skills {
+  display: inline-block;
+}
+#sections .skills ul {
+  list-style: none;
+  display: block;
+  overflow: hidden;
+}
+#sections .skills li {
+  width: 33%;
+  float: left;
+}
+#sections .project-stack {
+  display: inline-block;
+  list-style: none;
+  padding-left: 0;
+}
+#sections .project-stack ul {
+  display: block;
+  overflow: hidden;
+}
+#sections .project-stack li {
+  padding-right: 1em;
+  float: left;
+}
+#sections .project-links {
+  display: inline-block;
+  list-style: none;
+  padding-left: 0;
+}
+#sections .project-links ul {
+  display: block;
+  overflow: hidden;
+}
+#sections .project-links li {
+  padding-right: 1em;
+  float: left;
+}
 #sections #name {
   font-style: italic;
   color: #55c1f3;
 }
 
-#bottombar {
-  height: 10em;
-  z-index: 99 !important;
-  background-color: #181818;
-  color: #CCCCCC;
-  margin-top: 6em;
-  bottom: 0px;
-  width: 100%;
-  text-align: center;
-}
-
 @media only screen and (max-width: 80em) {
   #sections {
     padding-left: 0em;
-  }
-  #sections .section {
-    width: 40em;
   }
   #sections .entrypoint {
     width: 40em;
@@ -101,17 +123,14 @@
 }
 @media only screen and (max-width: 48em) {
   #sections {
-    padding-left: 0em;
     margin: 0;
   }
   #sections .section {
     width: 30em;
-    padding-left: 0.5em;
     margin: 0;
   }
   #sections .entrypoint {
     width: 30em;
-    padding-left: 0.5em;
     margin: 0;
   }
 }

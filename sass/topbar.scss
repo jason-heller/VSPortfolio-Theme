@@ -40,7 +40,9 @@ $topPadding: calc(($topbarHeight - $fontSize) / 2) - 2;
 			-webkit-transition: background-color $urlHoverTransSpeedIn ease-in;
 	
 			transition:color $urlHoverTransSpeedOut ease-out, background-color $urlHoverTransSpeedIn ease-in;
-			}
-			a:hover { background-color:$hoverColor; }
+		}
+		a:hover { 
+			background-color:$hoverColor; 
+		}
 	}
 }

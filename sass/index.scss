@@ -20,5 +20,26 @@ body {
 
 html, body {
   height: 100%;
+}
 
+:root {
+  --scroll: 0;
+}
+
+a {
+  color: #7CDCF0;
+  border-radius: 4px;
+
+  text-decoration: none;
+
+  -o-transition: background-color $urlHoverTransSpeedIn ease-in;
+  -ms-transition: background-color $urlHoverTransSpeedIn ease-in;
+  -moz-transition: background-color $urlHoverTransSpeedIn ease-in;
+  -webkit-transition: background-color $urlHoverTransSpeedIn ease-in;
+
+  transition: color $urlHoverTransSpeedOut ease-out, background-color $urlHoverTransSpeedIn ease-in;
+}
+
+a:hover { 
+  background-color: #264F78; 
 }

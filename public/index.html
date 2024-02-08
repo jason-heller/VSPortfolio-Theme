@@ -35,6 +35,7 @@
 		</picture>
 		
 		<nav>
+			<a href="#about">About Me</a>
 			<a href="#skills">Skills</a>
 			<a href="#projects">Projects</a>
 			<a href="#contact">Contact</a>
@@ -44,35 +45,49 @@
 	<div id="sidebar">
 
 		<div class="icons">
-			<a href="https://github.com/jason-heller" aria-label="github" class="link link--icon">
+			<a href="https://github.com/jason-heller" aria-label="github">
 				<i aria-hidden="true" class="fab fa-github"></i>
 			</a>
 
-			<a href="https://linkedin.com/in/jasonheller96" aria-label="linkedin" class="link link--icon">
+			<a href="https://linkedin.com/in/jasonheller96" aria-label="linkedin">
 				<i aria-hidden="true" class="fab fa-linkedin"></i>
 			</a>
 		</div>
 
 		<div class="explorer">
 
-			<details open>
-				<summary><a href="#skills">Skills</a></summary>
+			EXPLORER
 
-				<ul>
-					<li><i class="fas fa-terminal"></i> HTML5</li>
-					<li><i class="fas fa-terminal"></i> CSS3 + SASS</li>
-				</ul>
-			</details>
+			<p></p>
 
-			<details open>
+			<b class="portfolio">PORTFOLIO</b>
+
+			<ul>
+				<a href="#about"><i class="fas fa-terminal"></i> About Me</a>
+			</ul>
+
+			<ul>
+				<a href="#skills"><i class="fas fa-terminal"></i> Skills</a>
+			</ul>
+
+			<ul><details>
 				<summary><a href="#projects">Projects</a></summary>
 				<ul>
-					<li><a href="#recipe-lookup"><i class="fas fa-terminal"></i>Predictive Recipe Lookup</a></li>
-					<li><a href="#netscidraw"><i class="fas fa-terminal"></i>NetSciDraw</a></li>
-					<li><a href="#java-game-engine"><i class="fas fa-terminal"></i>3D Java Game Engine</a></li>
-					<li><a href="#procedural-open-world"><i class="fas fa-terminal"></i>Procedural Open World</a></li>
+					<li><a href="#recipe-lookup"><i class="fas fa-terminal"></i> Recipe Lookup</a></li>
+					<li><a href="#netscidraw"><i class="fas fa-terminal"></i> NetSciDraw</a></li>
+					<li><a href="#java-game-engine"><i class="fas fa-terminal"></i> 3D Java Game Engine</a></li>
+					<li><a href="#procedural-open-world"><i class="fas fa-terminal"></i> Procedural Open World</a></li>
 				</ul>
-			</details>
+			</details></ul>
+
+			<ul><details>
+				<summary><a href="#contact">Contact</a></summary>
+
+				<ul>
+					<li><a href="mailto:jasonheller96@gmail.com"><i class="fas fa-envelope"></i> Email</li></a>
+					<li><a href="https://linkedin.com/in/jasonheller96"><i class="fab fa-linkedin"></i> Linkedin</li></a>
+				</ul>
+			</details></ul>
 
 		</div>
 	
@@ -93,52 +108,51 @@
 				<div class="header">About Me</div>
 
 				<div class="body">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-					exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
-					pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+					I am a graduate from <a href="https://www.binghamton.edu/">Binghamton University</a> with a bachelors in actuarial mathematics. I have taken my studies and utilized them to further my
+					passion for computer programming, focusing my efforts to create a variety of projects, ranging from video game engines to webpage applications.
+					In my free time I develop video games, tools, and applications. My most recent project is a feature-complete 3D game engine written using Java
+					and OpenGL. I am currently seeking a front end software development position.
 				</div>
 
 				<div class="footer"></div>
 
 			</div>
 			
-			<img class="section-image" src="media/me.jpg"/>
+			<img class="section-image" src="media/me.jpg" id="headshot"/>
 
 		</div>
 
 		<div class="section" id="skills">
 			
-			<div class="section-text">
+			<div class="section-text-no-image">
 
 				<div class="header">Skills</div>
 
 				<div class="body">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-					exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
-					pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+					Here are some of the tools I commonly work with:
 
-					<ul>
-						<li><i class="fab fa-html5"></i> HTML5</li>
-						<li><i class="fab fa-css3"></i> CSS3 + SASS</li>
-						<li><i class="fab fa-react"></i> React</li>
-						<li><i class="fab fa-vuejs"></i> Vue</li>
-						<li><i class="fab fa-java"></i> Java</li>
-						<li><i class="fab fa-js"></i> Javascript</li>
-						<li><i class="fab fa-python"></i> Python</li>
-						<li><i class="fas fa-terminal"></i> GLSL</li>
-						<li><i class="fas fa-terminal"></i> VS Code</li>
-						<li><i class="fab fa-git-alt"></i> Git</li>
-						<li><i class="fas fa-tools"></i> Gradle & Maven</li>
-						<li><i class="fab fa-java"></i> Spring Boot</li>
-						<li><i class="fab fa-codepen"></i> OpenGL</li>
-					</ul>
+					<div class="skills">
+						<ul>
+							<li><i class="fab fa-html5"></i> HTML5</li>
+							<li><i class="fab fa-css3"></i> CSS3 + SASS</li>
+							<li><i class="fab fa-react"></i> React</li>
+							<li><i class="fab fa-vuejs"></i> Vue</li>
+							<li><i class="fab fa-java"></i> Java</li>
+							<li><i class="fab fa-js"></i> Javascript</li>
+							<li><i class="fab fa-python"></i> Python</li>
+							<li><i class="fas fa-terminal"></i> GLSL</li>
+							<li><i class="fas fa-terminal"></i> VS Code</li>
+							<li><i class="fab fa-git-alt"></i> Git</li>
+							<li><i class="fas fa-tools"></i> Gradle & Maven</li>
+							<li><i class="fab fa-java"></i> Spring Boot</li>
+							<li><i class="fab fa-codepen"></i> OpenGL</li>
+						</ul>
+					</div>
 				</div>
 
 				<div class="footer"></div>
 
 			</div>
-
-			<img class="section-image" src="media/logo.png"/>
 
 		</div>
 
@@ -149,11 +163,7 @@
 				<div class="header">Projects</div>
 
 				<div class="body">
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-						exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
-						pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-					</p>
+					<!-- Write something here if you want. -->
 
 					<!-- Projects go here -->
 
@@ -167,17 +177,24 @@
 						</p>
 
 						<ul class="project-stack">
-							<li class="project-stack-item">Javascript</li>
-							<li class="project-stack-item">React</li>
-							<li class="project-stack-item">Json-Server</li>
+							<li><i class="fab fa-react"></i> React</li>
+							<li><i class="fab fa-js"></i> Javascript</li>
 						</ul>
 
-						<a href="https://github.com/jason-heller/recipe-predictive-lookup" aria-label="source code" class="link link--icon">
-							<i aria-hidden="true" class="fab fa-github"></i>
-						</a>
-						<a href="https://youtu.be/IcualmCfFbs" aria-label="live preview" class="link link--icon">
-							<i aria-hidden="true" class="fas fa-external-link-alt"></i>
-						</a>
+						<br>
+						
+						<ul class="project-links">
+							<li>
+								<a href="https://github.com/jason-heller/recipe-predictive-lookup" aria-label="source code">
+									<i aria-hidden="true" class="fab fa-github" class="icon-link"></i> Github Page
+								</a>
+							</li>
+							<li>
+								<a href="https://youtu.be/IcualmCfFbs" aria-label="view on Youtube" class="icon-link">
+									<i aria-hidden="true" class="fab fa-youtube"></i> Watch Video
+								</a>
+							</li>
+						</ul>
 
 					</div>
 					<div class="footer project-block-end"></div>
@@ -194,15 +211,23 @@
 						</p>
 
 						<ul class="project-stack">
-							<li class="project-stack-item">Javascript</li>
+							<li><i class="fab fa-js"></i> Javascript</li>
 						</ul>
 
-						<a href="https://github.com/jason-heller/NetSciDraw" aria-label="source code" class="link link--icon">
-							<i aria-hidden="true" class="fab fa-github"></i>
-						</a>
-						<a href="http://coco.binghamton.edu/netscidraw/" aria-label="live preview" class="link link--icon">
-              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-            </a>
+						<br>
+						
+						<ul class="project-links">
+							<li>
+								<a href="https://github.com/jason-heller/NetSciDraw" aria-label="source code">
+									<i aria-hidden="true" class="fab fa-github" class="icon-link"></i> Github Page
+								</a>
+							</li>
+							<li>
+								<a href="http://coco.binghamton.edu/netscidraw/" aria-label="view on Youtube" class="icon-link">
+									<i aria-hidden="true" class="fas fa-external-link-alt"></i> Launch App
+								</a>
+							</li>
+						</ul>
 
 					</div>
 					<div class="footer project-block-end"></div>
@@ -216,23 +241,31 @@
 
 						<p class="project-description">
 							A 3D game engine written in Java using OpenGL. Features a scene-entity architecture. Features fully 3D environments
-                utilizing BSP trees for optimization, baked ambient lightmapping, skeletal animations, parallax-corrected cube maps,
-                and a built-in component based user interface. Currently, I am using this engine to power a momentum-based skateboarding
-                game.
+							utilizing BSP trees for optimization, baked ambient lightmapping, skeletal animations, parallax-corrected cube maps,
+							and a built-in component based user interface. Currently, I am using this engine to power a momentum-based skateboarding
+							game.
 						</p>
 
 						<ul class="project-stack">
-							<li class="project-stack-item">Java</li>
-							<li class="project-stack-item">OpenGL</li>
-							<li class="project-stack-item">GLSL</li>
+							<li><i class="fab fa-java"></i> Java</li>
+							<li><i class="fab fa-codepen"></i> OpenGL</li>
+							<li><i class="fab fa-codepen"></i> GLSL</li>
 						</ul>
 
-						<a href="https://github.com/jason-heller/3d-java-game-engine" aria-label="source code" class="link link--icon">
-							<i aria-hidden="true" class="fab fa-github"></i>
-						</a>
-						<a href="https://youtu.be/RS1yGBSSrEE" aria-label="view on Youtube" class="link link--icon">
-              <i aria-hidden="true" class="fab fa-youtube"></i>
-            </a>
+						<br>
+						
+						<ul class="project-links">
+							<li>
+								<a href="https://github.com/jason-heller/3d-java-game-engine" aria-label="source code">
+									<i aria-hidden="true" class="fab fa-github" class="icon-link"></i> Github Page
+								</a>
+							</li>
+							<li>
+								<a href="https://youtu.be/RS1yGBSSrEE" aria-label="view on Youtube" class="icon-link">
+									<i aria-hidden="true" class="fab fa-youtube"></i> Watch Video
+								</a>
+							</li>
+						</ul>
 
 					</div>
 					<div class="footer project-block-end"></div>
@@ -250,17 +283,25 @@
 						</p>
 
 						<ul class="project-stack">
-							<li class="project-stack-item">Java</li>
-							<li class="project-stack-item">OpenGL</li>
-							<li class="project-stack-item">GLSL</li>
+							<li><i class="fab fa-java"></i> Java</li>
+							<li><i class="fab fa-codepen"></i> OpenGL</li>
+							<li><i class="fab fa-codepen"></i> GLSL</li>
 						</ul>
 
-						<a href="https://github.com/jason-heller/ProjectMoonglade" aria-label="source code" class="link link--icon">
-							<i aria-hidden="true" class="fab fa-github"></i>
-						</a>
-						<a href="https://www.youtube.com/watch?v=At-BLAWecRA&t=384s" aria-label="view on Youtube" class="link link--icon">
-              <i aria-hidden="true" class="fab fa-youtube"></i>
-            </a>
+						<br>
+
+						<ul class="project-links">
+							<li>
+								<a href="https://github.com/jason-heller/ProjectMoonglade" aria-label="source code">
+									<i aria-hidden="true" class="fab fa-github" class="icon-link"></i> Github Page
+								</a>
+							</li>
+							<li>
+								<a href="https://www.youtube.com/watch?v=At-BLAWecRA&t=384s" aria-label="view on Youtube" class="icon-link">
+									<i aria-hidden="true" class="fab fa-youtube"></i> Watch Video
+								</a>
+							</li>
+						</ul>
 
 					</div>
 					<div class="footer project-block-end"></div>
@@ -279,19 +320,30 @@
 			
 			<div class="section-text">
 
-				<div class="header">Lets get in touch</div>
+				<div class="header">Contact Me</div>
 
 				<div class="body">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-					exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
-					pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+					<p>
+						My inbox is always open! Whether you have a question or just want to say hello, 
+						I'll try my best to get back to you! Feel free to mail me about any relevant job updates.
+
+						<br><br>
+
+						<a href="mailto:jasonheller96@gmail.com">
+							<span class="btn btn--outline">EmailMe();</span>
+						</a>
+
+						<br>
+						
+						<a href="https://linkedin.com/in/jasonheller96"> 
+							<span class="btn btn--outline">VisitMyLinkedIn();</span>
+						</a>
+					</p>
 				</div>
 
 				<div class="footer"></div>
 
 			</div>
-			
-			<img class="section-image" src="media/logo.png"/>
 
 		</div>
 		

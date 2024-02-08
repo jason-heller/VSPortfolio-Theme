@@ -40,8 +40,14 @@
   height: 100%;
   top: 42px;
   left: 0px;
-  right: 0px;
   overflow: hidden;
+}
+#sidebar a {
+  color: #7C7C7C;
+}
+#sidebar a:hover {
+  color: #FFFFFF;
+  background: none;
 }
 #sidebar .icons {
   position: fixed;
@@ -63,6 +69,7 @@
 }
 #sidebar .explorer a {
   color: #CCCCCC;
+  transition: none;
 }
 #sidebar .explorer i {
   color: #DD7726;
@@ -97,7 +104,7 @@
 #sidebar .explorer summary {
   list-style-type: none; /* Firefox */
   position: relative;
-  left: 30px;
+  left: 25px;
   cursor: pointer;
   display: block;
   user-select: none;
@@ -117,6 +124,27 @@
   transform: rotate(-45deg);
 }
 #sidebar .explorer details[open] summary:before {
+  transform: rotate(45deg);
+}
+
+.portfolio {
+  list-style-type: none;
+  position: relative;
+  left: 30px;
+  cursor: pointer;
+  display: block;
+  user-select: none;
+}
+
+.portfolio:before {
+  content: "";
+  position: absolute;
+  border-right: 1px solid #CCCCCC;
+  border-bottom: 1px solid #CCCCCC;
+  width: 5px;
+  height: 5px;
+  top: 5px;
+  left: -20px;
   transform: rotate(45deg);
 }
 

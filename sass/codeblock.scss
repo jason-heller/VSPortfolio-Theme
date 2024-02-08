@@ -22,7 +22,7 @@ $tabWidth: 1em;
 }
 
 .header:after {
-	content: ' {';
+	content: ' { ';
 	color: $titleBracketColor;
 }
 
@@ -33,8 +33,8 @@ $tabWidth: 1em;
 	background-color: $bgColorBody;
 	padding-right: 4px;
 	padding-left: $tabWidth;
-	padding-top: 25px;
-	padding-bottom: 25px;
+	padding-top: 1em;
+	padding-bottom: 1em;
 
 	text-align: left;
 }
@@ -50,9 +50,5 @@ $tabWidth: 1em;
 @media only screen and (max-width: $minWidForImages) {
 	#sections {
 		padding-left: 0em;
-
-		.body {
-			padding-left: calc($tabWidth / 2);
-		}
 	}
 } 
