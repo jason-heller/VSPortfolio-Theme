@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<div id="all">
+<header>
 
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -22,14 +23,14 @@
 
 	<title>Jason Heller</title>
 
-</head>
+</header>
 
-<body>
+<div id="body">
 
 	<div id="topbar">
 		<picture>
-			<source media="(max-width: 655px)" srcset="media/topbar-logo-fallback-2.png">
-			<source media="(min-width: 656px)" srcset="media/topbar-logo.png">
+			<source media="(max-width: 690px)" srcset="media/topbar-logo-fallback-2.png">
+			<source media="(min-width: 691px)" srcset="media/topbar-logo.png">
 			<img src="media/topbar-logo.png" alt="media/topbar-logo-fallback-2.png">
 		</picture>
 		
@@ -79,8 +80,10 @@
 
 	<div id="sections">
 
-		<div class="header">
+		<div class="sectionbounds">
+			<div class="header">
 			Hi! I'm <span id="name">Jason Heller</span>
+			</div>
 		</div>
 
 		<div class="section" id="about">
@@ -292,11 +295,18 @@
 
 		</div>
 		
-		<div class="footer"></div>
+		<div class="footer sectionbounds"></div>
 
+	</div>
+
+	<div id = "credit">
+		<p>
+			<a href="https://github.com/jason-heller/VSPortfolio-Theme">Created by Jason Heller</a>
+		</p>
 	</div>
 
 	<script src="app.js"></script>
 
-</body>
+</div>
+</div>
 </html>

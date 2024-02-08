@@ -1,10 +1,9 @@
 function isInViewport(element) {
 	const rect = element.getBoundingClientRect();
-	const centerY = window.innerHeight / 2;
-	const range = 200;
+
 	return (
-		rect.top > centerY - range &&
-		rect.bottom < centerY + range
+		rect.top > 0 &&
+		rect.bottom < window.innerHeight
 	);
 }
 

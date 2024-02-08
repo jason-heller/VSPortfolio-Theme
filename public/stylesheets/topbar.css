@@ -5,7 +5,7 @@
   height: 42px;
   top: 0px;
   left: 0px;
-  z-index: 99 !important;
+  z-index: 90 !important;
   overflow: hidden;
 }
 #topbar img {

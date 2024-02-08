@@ -7,23 +7,23 @@ $titleFontSize: 36px;
 $titleFontColor: #D7AB4C;
 $titleBracketColor: #CE70B3;
 
-$tabWidth: 30px;
+$tabWidth: 1em;
 
 @mixin indent {
 	border-left: 2px solid #404040;
 }
 
 .header {
+	font-size: $titleFontSize;
 	background-color: $bgColorHead;
 	padding-right: 4px;
 	font-weight: bold;
-	font-size: $titleFontSize;
 	color: $titleFontColor;
 }
 
 .header:after {
 	content: ' {';
-		color: $titleBracketColor;
+	color: $titleBracketColor;
 }
 
 .body {
@@ -46,3 +46,13 @@ $tabWidth: 30px;
 	font-size: $titleFontSize;
 	color: $titleBracketColor;
 }
+
+@media only screen and (max-width: $minWidForImages) {
+	#sections {
+		padding-left: 0em;
+
+		.body {
+			padding-left: calc($tabWidth / 2);
+		}
+	}
+} 

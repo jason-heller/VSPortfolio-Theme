@@ -8,6 +8,8 @@ $urlHoverTransSpeedIn: .1s;
 $urlHoverTransSpeedOut: .1s;
 $hoverColor: #212B35;
 
+$minWidForImages: 48em;
+$minWidForSidebar: 80em;
 $sidebarWidth: 17em;
 
 @mixin defaults {
@@ -16,4 +18,16 @@ $sidebarWidth: 17em;
 	color: $defaultFontColor;
 
 	background-color: $defaultBgColor;
+
+	a {
+		color: #7C7C7C;
+	}
+
+	a:link {
+		text-decoration: none;
+	}
+
+	a:hover {
+		color: #FFFFFF;
+	}
 }

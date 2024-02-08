@@ -3,22 +3,16 @@
 
 $nameFontColor: #55c1f3;
 
-$sectionWidth: 55em;
-$contentWidth: 60%;
+$sectionWidth: 50em;
+$contentWidth: 55%;
 $contentPaddingHoriz: 1%;
 
 #sections {
 	
-	padding-left: $sidebarWidth + 4em;
+	margin: auto;
+	
+	padding-left: $sidebarWidth + $tabWidth;
 	padding-top: 200px;
-
-	.section {
-		padding-top: 50px;
-		padding-bottom: 50px;
-		padding-left: $tabWidth;
-		width: $sectionWidth;
-		@include indent;
-	}
 
 	@mixin section-content-defaults {
 		padding-right: $contentPaddingHoriz;
@@ -26,6 +20,21 @@ $contentPaddingHoriz: 1%;
 		display: inline-block;
 	}
 
+	.sectionbounds {
+		width: calc($sectionWidth + $tabWidth);
+		margin: auto;
+	}
+
+	.section {
+		padding-top: 50px;
+		padding-bottom: 50px;
+		padding-left: $tabWidth;
+		width: $sectionWidth;
+		@include indent;
+	
+		margin: auto;
+	}
+	
 	.section-text-no-image {
 		@include section-content-defaults;
 		width: 98%;
@@ -49,22 +58,47 @@ $contentPaddingHoriz: 1%;
 	}
 }
 
-@media only screen and (max-width: 60em) {
+#bottombar {
+	height: 10em;
+	
+	z-index: 99 !important;
+	background-color: #181818;
+	color: $defaultFontColor;
+	margin-top: 6em;
+	bottom: 0px;
+	width: 100%;
+	text-align: center;
+}
+
+@media only screen and (max-width: $minWidForSidebar) {
 	#sections {
 		padding-left: 0em;
 
 		.section {
 			width: $sectionWidth - 10em;
 		}
+
+		.entrypoint {
+			width: $sectionWidth - 10em;
+		}
 	}
 }
 
-@media only screen and (max-width: 40em) {
+@media only screen and (max-width: $minWidForImages) {
 	#sections {
 		padding-left: 0em;
+		margin: 0;
 
 		.section {
 			width: $sectionWidth - 20em;
+			padding-left: calc($tabWidth / 2);
+			margin: 0;
+		}
+
+		.entrypoint {
+			width: $sectionWidth - 20em;
+			padding-left: calc($tabWidth / 2);
+			margin: 0;
 		}
 	}
 }

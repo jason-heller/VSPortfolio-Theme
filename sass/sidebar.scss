@@ -13,7 +13,7 @@ $fontSize: 18px;
 	height: 100%;
 	top: $topbarHeight;
 	left: 0px;
-	z-index: 99 !important;
+	right: 0px;
 
 	overflow: hidden;
 
@@ -29,14 +29,6 @@ $fontSize: 18px;
 		i {
 			padding-top: .5em;
 		}
-
-		a {
-			color: #7C7C7C;
-		}
-	
-		a:hover {
-			color: #FFFFFF;
-		}
 	}
 	
 	.explorer {
@@ -48,29 +40,33 @@ $fontSize: 18px;
 		font-size: .8em;
 
 		a {
-			color: white;
+			color: $defaultFontColor;
+		}
+
+		i {
+			color: #DD7726;
 		}
 
 		a:link { 
-			text-decoration: none; 
-		} 
-		a:visited { 
 			text-decoration: none; 
 		} 
 		a:hover { 
 			text-decoration: none; 
 			background-color: #37373D;
 		} 
-		a:active { 
+
+		a:focus { 
 			text-decoration: none; 
 			background-color: #04395E;
+			border: 1px solid #0078D4;
+			color: #FFFFFF;
 		}
 
 		@mixin arrow {
 			content: '';
 			 position: absolute;
-			 border-right: 2px solid white;
-			 border-bottom: 2px solid white;
+			 border-right: 1px solid $defaultFontColor;
+			 border-bottom: 1px solid $defaultFontColor;
 			 width: 5px;
 			 height: 5px;
 			 top: 5px;
@@ -87,7 +83,7 @@ $fontSize: 18px;
 		
 		ul {
 			list-style: none;
-			border-left: 2px solid #404040;
+			border-left: 1px solid #404040;
 			padding: 0px;
 			padding-left: 5px;
 
@@ -120,7 +116,7 @@ $fontSize: 18px;
 	}
 }
 
-@media only screen and (max-width: 60em) {
+@media only screen and (max-width: $minWidForSidebar) {
 	#sidebar {
 		display: none;
 	}

@@ -5,7 +5,7 @@
   height: 42px;
   top: 0px;
   left: 0px;
-  z-index: 99 !important;
+  z-index: 90 !important;
   overflow: hidden;
 }
 #topbar img {
@@ -40,7 +40,7 @@
   height: 100%;
   top: 42px;
   left: 0px;
-  z-index: 99 !important;
+  right: 0px;
   overflow: hidden;
 }
 #sidebar .icons {
@@ -54,12 +54,6 @@
 #sidebar .icons i {
   padding-top: 0.5em;
 }
-#sidebar .icons a {
-  color: #7C7C7C;
-}
-#sidebar .icons a:hover {
-  color: #FFFFFF;
-}
 #sidebar .explorer {
   position: fixed;
   left: 4em;
@@ -68,21 +62,23 @@
   font-size: 0.8em;
 }
 #sidebar .explorer a {
-  color: white;
+  color: #CCCCCC;
+}
+#sidebar .explorer i {
+  color: #DD7726;
 }
 #sidebar .explorer a:link {
-  text-decoration: none;
-}
-#sidebar .explorer a:visited {
   text-decoration: none;
 }
 #sidebar .explorer a:hover {
   text-decoration: none;
   background-color: #37373D;
 }
-#sidebar .explorer a:active {
+#sidebar .explorer a:focus {
   text-decoration: none;
   background-color: #04395E;
+  border: 1px solid #0078D4;
+  color: #FFFFFF;
 }
 #sidebar .explorer ul li {
   position: relative;
@@ -91,7 +87,7 @@
 }
 #sidebar .explorer ul {
   list-style: none;
-  border-left: 2px solid #404040;
+  border-left: 1px solid #404040;
   padding: 0px;
   padding-left: 5px;
   margin-left: 12px;
@@ -112,8 +108,8 @@
 #sidebar .explorer summary:before {
   content: "";
   position: absolute;
-  border-right: 2px solid white;
-  border-bottom: 2px solid white;
+  border-right: 1px solid #CCCCCC;
+  border-bottom: 1px solid #CCCCCC;
   width: 5px;
   height: 5px;
   top: 5px;
@@ -124,7 +120,7 @@
   transform: rotate(45deg);
 }
 
-@media only screen and (max-width: 60em) {
+@media only screen and (max-width: 80em) {
   #sidebar {
     display: none;
   }

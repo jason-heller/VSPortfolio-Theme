@@ -1,6 +1,7 @@
 @import "defaults";
 @import "topbar";
 @import "sidebar";
+@import "bottombar";
 @import "sections";
 @import "project";
 
@@ -8,6 +9,16 @@ html {
   scroll-behavior: smooth;
 }
 
+#all {
+  min-height: 100%;
+  position:relative;
+}
+
 body {
 	@include defaults;
+}
+
+html, body {
+  height: 100%;
+
 }
