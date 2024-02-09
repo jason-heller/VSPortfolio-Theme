@@ -29,17 +29,31 @@
 
 	<div id="topbar">
 		<picture>
-			<source media="(max-width: 690px)" srcset="media/topbar-logo-fallback-2.png">
-			<source media="(min-width: 691px)" srcset="media/topbar-logo.png">
+			<source media="(max-width: 500px)" srcset="media/topbar-logo-fallback.png">
+			<source media="(min-width: 501px)" srcset="media/topbar-logo.png">
 			<img src="media/topbar-logo.png" alt="media/topbar-logo-fallback-2.png">
 		</picture>
 		
+		<!-- For desktop -->
 		<nav>
 			<a href="#about">About</a>
 			<a href="#skills">Skills</a>
 			<a href="#projects">Projects</a>
 			<a href="#contact">Contact</a>
+			<a href="https://jason-heller.github.io/resume/resume">Resume</a>
 		</nav>
+
+		<!-- For mobile -->
+		<div class="dropdown">
+			<i class="fas fa-bars"></i>
+			<div class="dropdown-content">
+			<a href="#about">About</a>
+			<a href="#skills">Skills</a>
+			<a href="#projects">Projects</a>
+			<a href="#contact">Contact</a>
+			<a href="https://jason-heller.github.io/resume/resume">Resume</a>
+			</div>
+		</div>
 	</div>
 
 	<div id="sidebar">
@@ -70,24 +84,32 @@
 				<a href="#skills"><i class="fas fa-terminal"></i> Skills</a>
 			</ul>
 
-			<ul><details>
+			<ul>
+				<details>
 				<summary><a href="#projects">Projects</a></summary>
-				<ul>
-					<li><a href="#recipe-lookup"><i class="fas fa-terminal"></i> Recipe Lookup</a></li>
-					<li><a href="#netscidraw"><i class="fas fa-terminal"></i> NetSciDraw</a></li>
-					<li><a href="#java-game-engine"><i class="fas fa-terminal"></i> 3D Java Game Engine</a></li>
-					<li><a href="#procedural-open-world"><i class="fas fa-terminal"></i> Procedural Open World</a></li>
-				</ul>
-			</details></ul>
+					<ul>
+						<li><a href="#recipe-lookup"><i class="fas fa-terminal"></i> Recipe Lookup</a></li>
+						<li><a href="#netscidraw"><i class="fas fa-terminal"></i> NetSciDraw</a></li>
+						<li><a href="#java-game-engine"><i class="fas fa-terminal"></i> 3D Java Game Engine</a></li>
+						<li><a href="#procedural-open-world"><i class="fas fa-terminal"></i> Procedural Open World</a></li>
+					</ul>
+				</details>
+			</ul>
 
-			<ul><details>
+			<ul>
+				<details>
 				<summary><a href="#contact">Contact</a></summary>
 
-				<ul>
-					<li><a href="mailto:jasonheller96@gmail.com"><i class="fas fa-envelope"></i> Email</li></a>
-					<li><a href="https://linkedin.com/in/jasonheller96"><i class="fab fa-linkedin"></i> Linkedin</li></a>
-				</ul>
-			</details></ul>
+					<ul>
+						<li><a href="mailto:jasonheller96@gmail.com"><i class="fas fa-envelope"></i> Email</li></a>
+						<li><a href="https://linkedin.com/in/jasonheller96"><i class="fab fa-linkedin"></i> Linkedin</li></a>
+					</ul>
+				</details>
+			</ul>
+
+			<ul>
+				<a href="https://jason-heller.github.io/resume/resume"><i class="fas fa-file"></i> Resume</a>
+			</ul>
 
 		</div>
 	
@@ -114,6 +136,8 @@
 					passion for computer programming, focusing my efforts to create a variety of projects, ranging from video game engines to webpage applications.
 					In my free time I develop video games, tools, and applications. My most recent project is a feature-complete 3D game engine written using Java
 					and OpenGL. I am currently seeking a front end software development position.
+					<br><br>
+					You can find my resume in the top right corner, or by clicking <a href="https://jason-heller.github.io/resume/resume"> here</a>!
 				</p></div>
 
 				<div class="footer"></div>

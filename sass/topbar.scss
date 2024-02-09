@@ -17,32 +17,88 @@ $topPadding: calc(($topbarHeight - $fontSize) / 2) - 2;
 
 	overflow: hidden;
 
+	a {
+		float: left;
+		color: #f2f2f2;
+		padding: $topPadding 9px;
+
+		text-decoration: none;
+		font-size: $fontSize;
+
+		-o-transition: background-color $urlHoverTransSpeedIn ease-in;
+		-ms-transition: background-color $urlHoverTransSpeedIn ease-in;
+		-moz-transition: background-color $urlHoverTransSpeedIn ease-in;
+		-webkit-transition: background-color $urlHoverTransSpeedIn ease-in;
+
+		transition:color $urlHoverTransSpeedOut ease-out, background-color $urlHoverTransSpeedIn ease-in;
+	}
+	a:hover { 
+		background-color: $hoverColor; 
+	}
+
 	img {
 		float: left;
-		padding: 6px 6px;
+		padding: $topPadding 9px;
     	margin-right:-100%;
 	}
 
 	nav {
 		float: right;
+	}
+
+	.dropdown {
+		position: fixed;
+		top: 4px;
+		right: -999;
+		size: 1.5;
+		border-radius: 4px;
+		padding: 8px;
+
+		-o-transition: background-color $urlHoverTransSpeedIn ease-in;
+		-ms-transition: background-color $urlHoverTransSpeedIn ease-in;
+		-moz-transition: background-color $urlHoverTransSpeedIn ease-in;
+		-webkit-transition: background-color $urlHoverTransSpeedIn ease-in;
+
+		transition:color $urlHoverTransSpeedOut ease-out, background-color $urlHoverTransSpeedIn ease-in;
+	}
+
+	.dropdown-content {
+		display: none;
+		position: fixed;
+		right: 0;
+		top: $topbarHeight - 4px;
+		size: 1;
+		background-color: $bgColor;
+		width: 160px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 99;
 
 		a {
-			float: left;
-			color: #f2f2f2;
-			padding: $topPadding 9px;
-
-			text-decoration: none;
-			font-size: $fontSize;
-
-			-o-transition: background-color $urlHoverTransSpeedIn ease-in;
-			-ms-transition: background-color $urlHoverTransSpeedIn ease-in;
-			-moz-transition: background-color $urlHoverTransSpeedIn ease-in;
-			-webkit-transition: background-color $urlHoverTransSpeedIn ease-in;
-	
-			transition:color $urlHoverTransSpeedOut ease-out, background-color $urlHoverTransSpeedIn ease-in;
+			padding: 12px 16px;
+			display: block;
+			width: 127px;
 		}
-		a:hover { 
-			background-color: $hoverColor; 
+	}
+
+	.dropdown:hover {
+		background-color: $hoverColor; 
+
+		.dropdown-content {
+			display: block;
 		}
+	}
+
+	.dropdown:focus .dropdown-content {
+		display: block;
+	}
+}
+
+@media only screen and (max-width: $minWidForImages) {
+	nav {
+		display: none;
+	}
+
+	.dropdown {
+		right: $topPadding;
 	}
 }

@@ -8,15 +8,7 @@
   z-index: 90 !important;
   overflow: hidden;
 }
-#topbar img {
-  float: left;
-  padding: 6px 6px;
-  margin-right: -100%;
-}
-#topbar nav {
-  float: right;
-}
-#topbar nav a {
+#topbar a {
   float: left;
   color: #f2f2f2;
   padding: 11px 9px;
@@ -28,8 +20,63 @@
   -webkit-transition: background-color 0.1s ease-in;
   transition: color 0.1s ease-out, background-color 0.1s ease-in;
 }
-#topbar nav a:hover {
+#topbar a:hover {
   background-color: #212B35;
+}
+#topbar img {
+  float: left;
+  padding: 11px 9px;
+  margin-right: -100%;
+}
+#topbar nav {
+  float: right;
+}
+#topbar .dropdown {
+  position: fixed;
+  top: 4px;
+  right: -999;
+  size: 1.5;
+  border-radius: 4px;
+  padding: 8px;
+  -o-transition: background-color 0.1s ease-in;
+  -ms-transition: background-color 0.1s ease-in;
+  -moz-transition: background-color 0.1s ease-in;
+  -webkit-transition: background-color 0.1s ease-in;
+  transition: color 0.1s ease-out, background-color 0.1s ease-in;
+}
+#topbar .dropdown-content {
+  display: none;
+  position: fixed;
+  right: 0;
+  top: 38px;
+  size: 1;
+  background-color: #181818;
+  width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 99;
+}
+#topbar .dropdown-content a {
+  padding: 12px 16px;
+  display: block;
+  width: 127px;
+}
+#topbar .dropdown:hover {
+  background-color: #212B35;
+}
+#topbar .dropdown:hover .dropdown-content {
+  display: block;
+}
+#topbar .dropdown:focus .dropdown-content {
+  display: block;
+}
+
+@media only screen and (max-width: 48em) {
+  nav {
+    display: none;
+  }
+  .dropdown {
+    right: 11px;
+  }
 }
 
 /*# sourceMappingURL=topbar.css.map */
