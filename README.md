@@ -6,7 +6,7 @@
 ---
 
 <p align="center">
-  <kbd><img src="https://github.com/jason-heller/VSPortfolio-Theme/blob/main/app.js" alt="Mockup image" title="Mockup"/></kbd>
+  <kbd><img src="https://github.com/jason-heller/VSPortfolio-Theme/blob/main/screenshot0.PNG" alt="Mockup image" title="Mockup"/></kbd>
 </p>
 
 ---
