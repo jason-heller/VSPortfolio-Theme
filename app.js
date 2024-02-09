@@ -1,11 +1,14 @@
-const resumeUrl = "https://jason-heller.github.io/resume/resume.pdf"
-const linkedinUrl = "https://linkedin.com/in/jasonheller96"
-const githubUrl = "https://github.com/jason-heller"
-const emailUrl = "mailto:jasonheller96@gmail.com"
+// Make sure to change these!
+const resumeUrl = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+const linkedinUrl = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+const githubUrl = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+const emailUrl = "mailto:none@mail.com"
 
+const slideshowChangeTimeMS = 2500		// How long it takes for the slideshow to change frames
+
+// Add more to the array as needed, each index of the array corrosponds to the id "slideshowX", where X is the index of the array
 const slideimages = [
-	createImgArray("media/projects/project3_gifA.gif", "media/projects/project3_gifB.gif", "media/projects/project3_gifC.gif"),
-	createImgArray("media/projects/project4_gifA.gif", "media/projects/project4_gifB.gif", "media/projects/project4_gifC.gif")
+	createImgArray("media/projects/burgerapp_slide0.png", "media/projects/burgerapp_slide1.png")
 ]
 
 var slideTimer = 0
@@ -21,7 +24,7 @@ function slideshowStep() {
 
 	slideTimer++
 
-	setTimeout("slideshowStep()", 2500)
+	setTimeout("slideshowStep()", slideshowChangeTimeMS)
 }
 
 function createImgArray(...urls) {

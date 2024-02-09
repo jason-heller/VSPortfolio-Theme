@@ -40,6 +40,21 @@ $topPadding: calc(($topbarHeight - $fontSize) / 2) - 2;
 		float: right;
 	}
 
+	.topbar-title {
+		position: fixed;
+		left: 0px;
+		font-size: 37px;
+	
+		padding: 0px 9px;
+		
+		z-index: 90 !important;
+		color: #DD7726;
+	}
+
+	.topbar-title-fallback {
+		display: none;
+	}
+
 	.dropdown {
 		display: none;
 		position: fixed;
@@ -88,6 +103,14 @@ $topPadding: calc(($topbarHeight - $fontSize) / 2) - 2;
 		}
 	
 		.dropdown {
+			display: block;
+		}
+
+		.topbar-title-main {
+			display: none;
+		}
+	
+		.topbar-title-fallback {
 			display: block;
 		}
 	}

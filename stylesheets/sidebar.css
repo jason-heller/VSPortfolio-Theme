@@ -31,6 +31,17 @@
 #topbar nav {
   float: right;
 }
+#topbar .topbar-title {
+  position: fixed;
+  left: 0px;
+  font-size: 37px;
+  padding: 0px 9px;
+  z-index: 90 !important;
+  color: #DD7726;
+}
+#topbar .topbar-title-fallback {
+  display: none;
+}
 #topbar .dropdown {
   display: none;
   position: fixed;
@@ -75,6 +86,12 @@
     display: none;
   }
   #topbar .dropdown {
+    display: block;
+  }
+  #topbar .topbar-title-main {
+    display: none;
+  }
+  #topbar .topbar-title-fallback {
     display: block;
   }
 }
