@@ -1,5 +1,5 @@
 .header {
-  font-size: 36px;
+  font-size: 30px;
   background-color: #1F1F1F;
   padding-right: 4px;
   font-weight: bold;
@@ -25,7 +25,7 @@
   content: "}";
   white-space: pre;
   font-weight: bold;
-  font-size: 36px;
+  font-size: 30px;
   color: #CE70B3;
 }
 

@@ -73,7 +73,6 @@ $contentPaddingHoriz: 1%;
 
 @media only screen and (max-width: $minWidForSidebar) {
 	#sections {
-		padding-left: 0em;
 
 
 		.entrypoint {
@@ -96,7 +95,7 @@ $contentPaddingHoriz: 1%;
 		}
 
 		.section-text {
-			width: $contentWidth - 2em;
+			width: $contentWidth - 5em;
 		}
 
 		.entrypoint {
@@ -106,6 +105,10 @@ $contentPaddingHoriz: 1%;
 
 		.section-image {
 			display:none;
+		}
+
+		.sectionbounds {
+			margin: 0;
 		}
 	}
 }

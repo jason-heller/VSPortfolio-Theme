@@ -198,7 +198,7 @@
 }
 
 .header {
-  font-size: 36px;
+  font-size: 30px;
   background-color: #1F1F1F;
   padding-right: 4px;
   font-weight: bold;
@@ -224,7 +224,7 @@
   content: "}";
   white-space: pre;
   font-weight: bold;
-  font-size: 36px;
+  font-size: 30px;
   color: #CE70B3;
 }
 
@@ -285,9 +285,6 @@
 }
 
 @media only screen and (max-width: 80em) {
-  #sections {
-    padding-left: 0em;
-  }
   #sections .entrypoint {
     width: 40em;
   }
@@ -304,7 +301,7 @@
     margin: 0;
   }
   #sections .section-text {
-    width: 28em;
+    width: 25em;
   }
   #sections .entrypoint {
     width: 30em;
@@ -312,6 +309,9 @@
   }
   #sections .section-image {
     display: none;
+  }
+  #sections .sectionbounds {
+    margin: 0;
   }
 }
 .project-image {
@@ -323,7 +323,7 @@
 
 .project-description {
   width: 50%;
-  min-width: 20em;
+  min-width: 17em;
 }
 
 .project-stack {
@@ -394,7 +394,7 @@ html {
 
 body {
   font-family: monaco, Consolas, Lucida Console, monospace;
-  font-size: 18px;
+  font-size: 16px;
   color: #CCCCCC;
   background-color: #1F1F1F;
 }
