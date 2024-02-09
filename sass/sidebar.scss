@@ -1,7 +1,6 @@
 @import "defaults";
 @import "topbar";
 
-$bgColor: #181818;
 $fontSize: 18px;
 
 @mixin arrow {
@@ -16,7 +15,7 @@ $fontSize: 18px;
 }
 
 #sidebar {
-	background-color: $bgColor;
+	background-color: $bgColorDark;
 	border: 1px solid #2B2B2B;
 
 	position: fixed;

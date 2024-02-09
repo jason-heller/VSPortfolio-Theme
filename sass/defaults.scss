@@ -2,11 +2,12 @@ $defaultFont: monaco,Consolas,Lucida Console,monospace;
 $defaultFontSize: 16px;
 $defaultFontColor: #CCCCCC;
 
-$defaultBgColor: #1F1F1F;
+$bgColor: #1F1F1F;
+$bgColorDark: #181818;
+$hoverColor: #212B35;
 
 $urlHoverTransSpeedIn: .1s;
 $urlHoverTransSpeedOut: .1s;
-$hoverColor: #212B35;
 
 $minWidForImages: 48em;
 $minWidForSidebar: 80em;
@@ -17,9 +18,18 @@ $sidebarWidth: 17em;
 	font-size: $defaultFontSize;
 	color: $defaultFontColor;
 
-	background-color: $defaultBgColor;
+	background-color: $bgColor;
 
 	a:link {
 		text-decoration: none;
 	}
+}
+
+@mixin urlTransition {
+	-o-transition: background-color $urlHoverTransSpeedIn ease-in;
+	-ms-transition: background-color $urlHoverTransSpeedIn ease-in;
+	-moz-transition: background-color $urlHoverTransSpeedIn ease-in;
+	-webkit-transition: background-color $urlHoverTransSpeedIn ease-in;
+
+	transition:color $urlHoverTransSpeedOut ease-out, background-color $urlHoverTransSpeedIn ease-in;
 }

@@ -1,30 +1,9 @@
-function setScrollCSS() {
-	const htmlElement = document.documentElement
-	const percentScrolled = htmlElement.scrollTop / (htmlElement.scrollHeight - htmlElement.clientHeight)
+const resumeUrl = "https://jason-heller.github.io/resume/resume.pdf"
+const linkedinUrl = "https://linkedin.com/in/jasonheller96"
+const githubUrl = "https://github.com/jason-heller"
+const emailUrl = "mailto:jasonheller96@gmail.com"
 
-	htmlElement.style.setProperty("--scroll", Math.min(percentScrolled * 100 , 100))
-	console.log(Math.min(percentScrolled * 100 , 100))
-}
-
-const observer = new IntersectionObserver(entries => {
-	for (let i = entries.length - 1; i >= 0; i--) {
-	  const entry = entries[i]
-	  if (entry.isIntersecting) {
-		document.querySelectorAll("[data-img]").forEach(img => {
-		  img.classList.remove("show")
-		})
-		const img = document.querySelector(entry.target.dataset.imgToShow)
-		img?.classList.add("show")
-		break
-	  }
-	}
-  })
-  
-  document.querySelectorAll("[data-img-to-show]").forEach(section => {
-	observer.observe(section)
-  })
-
-  const slideimages = [
+const slideimages = [
 	createImgArray("media/projects/project3_gifA.gif", "media/projects/project3_gifB.gif", "media/projects/project3_gifC.gif"),
 	createImgArray("media/projects/project4_gifA.gif", "media/projects/project4_gifB.gif", "media/projects/project4_gifC.gif")
 ]
@@ -56,8 +35,19 @@ function createImgArray(...urls) {
 	return imgArray
 }
 
-window.addEventListener("scroll", setScrollCSS)
-window.addEventListener("resize", setScrollCSS)
+function replaceUrl(className, url) {
+	var elements = document.getElementsByClassName(className)
 
-setScrollCSS()
+	for(var i = 0; i < elements.length; i++)
+		elements[i].href = url 
+}
+
+function initUrls() {
+	replaceUrl("resume-url", resumeUrl)
+	replaceUrl("linkedin-url", linkedinUrl)
+	replaceUrl("github-url", githubUrl)
+	replaceUrl("email-url", emailUrl)
+}
+
+initUrls()
 slideshowStep()

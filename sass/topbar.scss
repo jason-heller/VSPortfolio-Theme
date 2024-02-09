@@ -1,12 +1,11 @@
 @import "defaults";
 
-$bgColor: #181818;
 $topbarHeight: 42px;
 $fontSize: 16px;
 $topPadding: calc(($topbarHeight - $fontSize) / 2) - 2;
 
 #topbar {
-	background-color: $bgColor;
+	background-color: $bgColorDark;
 
 	position: fixed;
 	width: 100%;
@@ -25,12 +24,7 @@ $topPadding: calc(($topbarHeight - $fontSize) / 2) - 2;
 		text-decoration: none;
 		font-size: $fontSize;
 
-		-o-transition: background-color $urlHoverTransSpeedIn ease-in;
-		-ms-transition: background-color $urlHoverTransSpeedIn ease-in;
-		-moz-transition: background-color $urlHoverTransSpeedIn ease-in;
-		-webkit-transition: background-color $urlHoverTransSpeedIn ease-in;
-
-		transition:color $urlHoverTransSpeedOut ease-out, background-color $urlHoverTransSpeedIn ease-in;
+		@include urlTransition;
 	}
 	a:hover { 
 		background-color: $hoverColor; 
@@ -47,19 +41,15 @@ $topPadding: calc(($topbarHeight - $fontSize) / 2) - 2;
 	}
 
 	.dropdown {
+		display: none;
 		position: fixed;
 		top: 4px;
-		right: -999;
 		size: 1.5;
 		border-radius: 4px;
 		padding: 8px;
+		right: $topPadding;
 
-		-o-transition: background-color $urlHoverTransSpeedIn ease-in;
-		-ms-transition: background-color $urlHoverTransSpeedIn ease-in;
-		-moz-transition: background-color $urlHoverTransSpeedIn ease-in;
-		-webkit-transition: background-color $urlHoverTransSpeedIn ease-in;
-
-		transition:color $urlHoverTransSpeedOut ease-out, background-color $urlHoverTransSpeedIn ease-in;
+		@include urlTransition;
 	}
 
 	.dropdown-content {
@@ -68,7 +58,7 @@ $topPadding: calc(($topbarHeight - $fontSize) / 2) - 2;
 		right: 0;
 		top: $topbarHeight - 4px;
 		size: 1;
-		background-color: $bgColor;
+		background-color: $bgColorDark;
 		width: 160px;
 		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 		z-index: 99;
@@ -91,14 +81,14 @@ $topPadding: calc(($topbarHeight - $fontSize) / 2) - 2;
 	.dropdown:focus .dropdown-content {
 		display: block;
 	}
-}
 
-@media only screen and (max-width: $minWidForImages) {
-	nav {
-		display: none;
-	}
-
-	.dropdown {
-		right: $topPadding;
+	@media only screen and (max-width: $minWidForImages) {
+		nav {
+			display: none;
+		}
+	
+		.dropdown {
+			display: block;
+		}
 	}
 }

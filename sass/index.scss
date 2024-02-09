@@ -32,12 +32,7 @@ a {
 
   text-decoration: none;
 
-  -o-transition: background-color $urlHoverTransSpeedIn ease-in;
-  -ms-transition: background-color $urlHoverTransSpeedIn ease-in;
-  -moz-transition: background-color $urlHoverTransSpeedIn ease-in;
-  -webkit-transition: background-color $urlHoverTransSpeedIn ease-in;
-
-  transition: color $urlHoverTransSpeedOut ease-out, background-color $urlHoverTransSpeedIn ease-in;
+  @include urlTransition;
 }
 
 a:hover { 
