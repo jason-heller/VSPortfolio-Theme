@@ -87,6 +87,7 @@ $topPadding: calc(($topbarHeight - $fontSize) / 2) - 2;
 
 	.dropdown:hover {
 		background-color: $hoverColor; 
+		cursor: pointer;
 
 		.dropdown-content {
 			display: block;
